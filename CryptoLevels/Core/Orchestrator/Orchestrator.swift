@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import Combine
 
 /// The orchestrator is the class that is responsible
 /// of dispatching actions and updating the store.
-final class Orchestrator {
+final class Orchestrator: ObservableObject {
     private var _store: Store?
     
     var store: Store {

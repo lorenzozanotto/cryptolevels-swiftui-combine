@@ -11,7 +11,7 @@ import Combine
 
 final class Store: ObservableObject {
     @Published var levels: String = ""
-    let orchestrator: Orchestrator
+    @Published var orchestrator: Orchestrator
     
     init() {
         self.orchestrator = Orchestrator()
