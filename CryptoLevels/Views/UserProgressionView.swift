@@ -13,7 +13,12 @@ struct UserProgressionView: View {
     @EnvironmentObject var store: Store
     
     var body: some View {
-        Text("Welcome there")
+        NavigationView {
+            List {
+                Text("List item")
+            }
+            .navigationBarTitle("", displayMode: .inline)
+        }
     }
 }
 

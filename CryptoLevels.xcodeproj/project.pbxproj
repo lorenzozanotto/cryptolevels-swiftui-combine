@@ -18,7 +18,6 @@
 		ED96420E2353570F00271D09 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96420D2353570F00271D09 /* Store.swift */; };
 		ED96421123535A2900271D09 /* Orchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96421023535A2900271D09 /* Orchestrator.swift */; };
 		EDBC306123536B68007CD500 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBC306023536B68007CD500 /* UIResponder.swift */; };
-		EDBC306423536DAF007CD500 /* LightHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBC306323536DAF007CD500 /* LightHostingController.swift */; };
 		EDBC306623536FD2007CD500 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBC306523536FD2007CD500 /* UIColor.swift */; };
 		EDBC306823537176007CD500 /* UserProgressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBC306723537176007CD500 /* UserProgressionView.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		ED96420D2353570F00271D09 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		ED96421023535A2900271D09 /* Orchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orchestrator.swift; sourceTree = "<group>"; };
 		EDBC306023536B68007CD500 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
-		EDBC306323536DAF007CD500 /* LightHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightHostingController.swift; sourceTree = "<group>"; };
 		EDBC306523536FD2007CD500 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		EDBC306723537176007CD500 /* UserProgressionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgressionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,7 +217,6 @@
 		ED96421223535B4D00271D09 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				EDBC306223536DA2007CD500 /* Class Helpers */,
 				ED96421323535B5B00271D09 /* Extensions */,
 			);
 			path = Library;
@@ -232,14 +229,6 @@
 				EDBC306523536FD2007CD500 /* UIColor.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		EDBC306223536DA2007CD500 /* Class Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				EDBC306323536DAF007CD500 /* LightHostingController.swift */,
-			);
-			path = "Class Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDBC306423536DAF007CD500 /* LightHostingController.swift in Sources */,
 				ED9641F92353543900271D09 /* AppDelegate.swift in Sources */,
 				EDBC306823537176007CD500 /* UserProgressionView.swift in Sources */,
 				ED9641FB2353543900271D09 /* SceneDelegate.swift in Sources */,
