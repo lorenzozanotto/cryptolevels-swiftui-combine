@@ -27,10 +27,14 @@ final class Orchestrator: ObservableObject {
         guard let store = store else { return }
         guard let url = URL(string: Endpoints.CurrentLevel) else { return }
         
-        store.loading = true
+        store.startLoadingResource()
         _ = network.fire(at: url, output: CurrentLevel.self)
+            .mapError({ (error) -> Error in
+                store.error = NetworkError.map(error)
+                return error
+            })
             .catch { _ in Just(CurrentLevel.empty) }
-            .map({ store.loading = false
+            .map({ store.stopLoadingResource()
                 return $0
             })
             .assign(to: \.level, on: store)
