@@ -34,6 +34,19 @@ struct CurrentLevel: JSONDecodable {
         self.reward = json["level"]["level"]["reward"].stringValue
         self.invitedFriends = json["status"]["number_of_invitees"].intValue
         
-        self.tasks = []
+        let jsonTasks: Array<JSON> = json["level"]["tasks"].arrayValue
+        var parsedTasks = [LevelTask]()
+        
+        for jsonTask in jsonTasks {
+            let title = jsonTask["task"]["title"].stringValue
+            let completed = jsonTask["status"].stringValue.count > 0
+            
+            parsedTasks.append(LevelTask(
+                title: title,
+                completed: completed
+            ))
+        }
+        
+        self.tasks = parsedTasks
     }
 }
