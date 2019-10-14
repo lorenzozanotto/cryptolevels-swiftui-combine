@@ -20,5 +20,6 @@ extension UIResponder {
                
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().tintColor = UIColor.white
     }
 }

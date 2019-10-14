@@ -32,7 +32,7 @@ struct UserProgressionView: View {
             StatefulContent(state: store.mapLevelState(), whenLoaded: {
                 LevelList(self.store.level)
             }, whenLoading: {
-                PulseLoader()
+                PulseLoader(self.store.loading)
             }, onEmptyData: {
                 Text("No data to fetch. Try again later.")
             }, onError: { error in
