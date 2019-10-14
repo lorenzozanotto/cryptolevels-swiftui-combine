@@ -15,10 +15,31 @@ struct UserProgressionView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("List item")
+                LevelRow(LevelRowViewModel(
+                    title: store.name,
+                    rightContent: "Coiner - 1",
+                    completion: .completed,
+                    displayArrow: true
+                ))
+                
+                Section(header: Text("Next Level"), footer: Text("Reward")) {
+                    Text("Tap me")
+                    Text("Tap me")
+                    Text("Tap me")
+                }
+                
+                Section(header: Text("Referrals"), footer: Text("For each friend")) {
+                    Text("Tap me")
+                }
             }
             .navigationBarTitle("", displayMode: .inline)
+            .listStyle(GroupedListStyle())
         }
+        .onAppear(perform: fetchCurrentLevel)
+    }
+    
+    func fetchCurrentLevel() {
+        store.orchestrator.fetchCurrentLevel()
     }
 }
 

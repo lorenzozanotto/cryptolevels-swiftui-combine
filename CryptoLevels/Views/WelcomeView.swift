@@ -18,6 +18,7 @@ struct WelcomeView: View {
             Text("Welcome to CryptoLevels")
                 .font(.title)
                 .bold()
+                .padding()
             
             Button(action: {
                 self.showModal = true
