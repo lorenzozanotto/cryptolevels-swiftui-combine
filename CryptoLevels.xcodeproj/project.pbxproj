@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0A7CFD2353811000EAD79A /* LevelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7CFC2353811000EAD79A /* LevelRow.swift */; };
+		ED0A7D022353837A00EAD79A /* LevelRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D012353837A00EAD79A /* LevelRowViewModel.swift */; };
+		ED0A7D04235383D100EAD79A /* LevelRowCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D03235383D100EAD79A /* LevelRowCompletion.swift */; };
+		ED0A7D06235389DC00EAD79A /* CurrentLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D05235389DC00EAD79A /* CurrentLevel.swift */; };
+		ED0A7D0823538A9B00EAD79A /* LevelTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0723538A9B00EAD79A /* LevelTask.swift */; };
+		ED0A7D0A23538B7900EAD79A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0923538B7900EAD79A /* Endpoints.swift */; };
+		ED0A7D0C23538C0800EAD79A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0B23538C0800EAD79A /* NetworkManager.swift */; };
+		ED0A7D222354A24B00EAD79A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */; };
+		ED0A7D242354A3EB00EAD79A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D232354A3EB00EAD79A /* JSONDecodable.swift */; };
+		ED0A7D272354A97000EAD79A /* JSONComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D262354A96F00EAD79A /* JSONComposer.swift */; };
 		ED9641DD2353454A00271D09 /* CryptoLevelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641DC2353454A00271D09 /* CryptoLevelsTests.swift */; };
 		ED9641E82353454A00271D09 /* CryptoLevelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641E72353454A00271D09 /* CryptoLevelsUITests.swift */; };
 		ED9641F92353543900271D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641F62353543900271D09 /* AppDelegate.swift */; };
@@ -40,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED0A7CFC2353811000EAD79A /* LevelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRow.swift; sourceTree = "<group>"; };
+		ED0A7D012353837A00EAD79A /* LevelRowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelRowViewModel.swift; sourceTree = "<group>"; };
+		ED0A7D03235383D100EAD79A /* LevelRowCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRowCompletion.swift; sourceTree = "<group>"; };
+		ED0A7D05235389DC00EAD79A /* CurrentLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLevel.swift; sourceTree = "<group>"; };
+		ED0A7D0723538A9B00EAD79A /* LevelTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelTask.swift; sourceTree = "<group>"; };
+		ED0A7D0923538B7900EAD79A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		ED0A7D0B23538C0800EAD79A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		ED0A7D232354A3EB00EAD79A /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		ED0A7D262354A96F00EAD79A /* JSONComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONComposer.swift; sourceTree = "<group>"; };
 		ED9641C22353454900271D09 /* CryptoLevels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoLevels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9641D82353454A00271D09 /* CryptoLevelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoLevelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9641DC2353454A00271D09 /* CryptoLevelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLevelsTests.swift; sourceTree = "<group>"; };
@@ -86,6 +106,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED0A7D002353837A00EAD79A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A7D012353837A00EAD79A /* LevelRowViewModel.swift */,
+				ED0A7D03235383D100EAD79A /* LevelRowCompletion.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED0A7D202354A24100EAD79A /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		ED0A7D252354A96700EAD79A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A7D262354A96F00EAD79A /* JSONComposer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		ED9641B92353454900271D09 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +214,7 @@
 			children = (
 				ED964207235355C400271D09 /* WelcomeView.swift */,
 				EDBC306723537176007CD500 /* UserProgressionView.swift */,
+				ED0A7CFC2353811000EAD79A /* LevelRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +233,9 @@
 		ED96420A235356F400271D09 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A7D0923538B7900EAD79A /* Endpoints.swift */,
+				ED0A7D0B23538C0800EAD79A /* NetworkManager.swift */,
+				ED0A7D232354A3EB00EAD79A /* JSONDecodable.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -194,6 +243,9 @@
 		ED96420B235356F400271D09 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A7D002353837A00EAD79A /* ViewModels */,
+				ED0A7D05235389DC00EAD79A /* CurrentLevel.swift */,
+				ED0A7D0723538A9B00EAD79A /* LevelTask.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +269,8 @@
 		ED96421223535B4D00271D09 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A7D252354A96700EAD79A /* Utilities */,
+				ED0A7D202354A24100EAD79A /* Vendors */,
 				ED96421323535B5B00271D09 /* Extensions */,
 			);
 			path = Library;
@@ -384,14 +438,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0A7D0A23538B7900EAD79A /* Endpoints.swift in Sources */,
 				ED9641F92353543900271D09 /* AppDelegate.swift in Sources */,
 				EDBC306823537176007CD500 /* UserProgressionView.swift in Sources */,
+				ED0A7D04235383D100EAD79A /* LevelRowCompletion.swift in Sources */,
 				ED9641FB2353543900271D09 /* SceneDelegate.swift in Sources */,
+				ED0A7D06235389DC00EAD79A /* CurrentLevel.swift in Sources */,
 				ED96421123535A2900271D09 /* Orchestrator.swift in Sources */,
 				ED964208235355C400271D09 /* WelcomeView.swift in Sources */,
+				ED0A7CFD2353811000EAD79A /* LevelRow.swift in Sources */,
 				EDBC306623536FD2007CD500 /* UIColor.swift in Sources */,
+				ED0A7D242354A3EB00EAD79A /* JSONDecodable.swift in Sources */,
 				EDBC306123536B68007CD500 /* UIResponder.swift in Sources */,
+				ED0A7D0823538A9B00EAD79A /* LevelTask.swift in Sources */,
+				ED0A7D0C23538C0800EAD79A /* NetworkManager.swift in Sources */,
+				ED0A7D222354A24B00EAD79A /* SwiftyJSON.swift in Sources */,
+				ED0A7D022353837A00EAD79A /* LevelRowViewModel.swift in Sources */,
 				ED96420E2353570F00271D09 /* Store.swift in Sources */,
+				ED0A7D272354A97000EAD79A /* JSONComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

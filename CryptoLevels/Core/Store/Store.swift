@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 final class Store: ObservableObject {
-    @Published var levels: String = ""
+    @Published var currentLevel = CurrentLevel.empty
     @Published var orchestrator: Orchestrator
     
     init() {
