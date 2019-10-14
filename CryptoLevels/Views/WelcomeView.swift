@@ -33,10 +33,6 @@ struct WelcomeView: View {
             .cornerRadius(5)
         }
     }
-    
-    func checkLevelProgression() {
-        
-    }
 }
 
 struct WelcomeView_Previews: PreviewProvider {

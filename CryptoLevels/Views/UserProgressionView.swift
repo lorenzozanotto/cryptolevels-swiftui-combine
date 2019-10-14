@@ -9,31 +9,16 @@
 import SwiftUI
 
 struct UserProgressionView: View {
-    
     @EnvironmentObject var store: Store
     
     var body: some View {
         NavigationView {
-            List {
-                LevelRow(LevelRowViewModel(
-                    title: store.name,
-                    rightContent: "Coiner - 1",
-                    completion: .completed,
-                    displayArrow: true
-                ))
-                
-                Section(header: Text("Next Level"), footer: Text("Reward")) {
-                    Text("Tap me")
-                    Text("Tap me")
-                    Text("Tap me")
-                }
-                
-                Section(header: Text("Referrals"), footer: Text("For each friend")) {
-                    Text("Tap me")
-                }
-            }
+            StatefulContent(loading: store.loading, whenLoaded: {
+                LevelList(self.store.level)
+            }, whenLoading: {
+                PulseLoader()
+            })
             .navigationBarTitle("", displayMode: .inline)
-            .listStyle(GroupedListStyle())
         }
         .onAppear(perform: fetchCurrentLevel)
     }

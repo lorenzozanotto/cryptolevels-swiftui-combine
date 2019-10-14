@@ -26,12 +26,13 @@ final class Orchestrator: ObservableObject {
     func fetchCurrentLevel() {
         guard let store = store else { return }
         guard let url = URL(string: Endpoints.CurrentLevel) else { return }
+        
+        store.loading = true
         _ = network.fire(at: url, output: CurrentLevel.self)
             .catch { _ in Just(CurrentLevel.empty) }
-            .map({
-                print("RESULT => \($0)")
+            .map({ store.loading = false
                 return $0
             })
-            .assign(to: \.currentLevel, on: store)
+            .assign(to: \.level, on: store)
     }
 }

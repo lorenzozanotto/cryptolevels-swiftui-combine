@@ -34,9 +34,6 @@ struct LevelRow: View {
             HStack {
                 Text(viewModel.rightContent)
                     .foregroundColor(.gray)
-                if viewModel.displayArrow {
-                    Image("arrow.next")
-                }
             }
         }
     }
@@ -47,8 +44,7 @@ struct LevelRow_Previews: PreviewProvider {
         let preview = LevelRowViewModel(
             title: "Current Level",
             rightContent: "Coiner - 1",
-            completion: .completed,
-            displayArrow: true
+            completion: .completed
         )
         return LevelRow(preview)
     }

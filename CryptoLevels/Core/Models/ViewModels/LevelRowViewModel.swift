@@ -12,5 +12,4 @@ struct LevelRowViewModel {
     let title: String
     let rightContent: String
     let completion: LevelRowCompletion
-    let displayArrow: Bool
 }

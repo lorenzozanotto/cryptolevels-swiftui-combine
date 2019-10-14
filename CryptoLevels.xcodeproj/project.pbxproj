@@ -17,6 +17,9 @@
 		ED0A7D222354A24B00EAD79A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */; };
 		ED0A7D242354A3EB00EAD79A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D232354A3EB00EAD79A /* JSONDecodable.swift */; };
 		ED0A7D272354A97000EAD79A /* JSONComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D262354A96F00EAD79A /* JSONComposer.swift */; };
+		ED0A7D2B2354F84F00EAD79A /* StatefulContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D2A2354F84F00EAD79A /* StatefulContent.swift */; };
+		ED0A7D2D2355034000EAD79A /* LevelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D2C2355034000EAD79A /* LevelList.swift */; };
+		ED0A7D2F2355065A00EAD79A /* PulseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D2E2355065A00EAD79A /* PulseLoader.swift */; };
 		ED9641DD2353454A00271D09 /* CryptoLevelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641DC2353454A00271D09 /* CryptoLevelsTests.swift */; };
 		ED9641E82353454A00271D09 /* CryptoLevelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641E72353454A00271D09 /* CryptoLevelsUITests.swift */; };
 		ED9641F92353543900271D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641F62353543900271D09 /* AppDelegate.swift */; };
@@ -60,6 +63,9 @@
 		ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		ED0A7D232354A3EB00EAD79A /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		ED0A7D262354A96F00EAD79A /* JSONComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONComposer.swift; sourceTree = "<group>"; };
+		ED0A7D2A2354F84F00EAD79A /* StatefulContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulContent.swift; sourceTree = "<group>"; };
+		ED0A7D2C2355034000EAD79A /* LevelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelList.swift; sourceTree = "<group>"; };
+		ED0A7D2E2355065A00EAD79A /* PulseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseLoader.swift; sourceTree = "<group>"; };
 		ED9641C22353454900271D09 /* CryptoLevels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoLevels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9641D82353454A00271D09 /* CryptoLevelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoLevelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9641DC2353454A00271D09 /* CryptoLevelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLevelsTests.swift; sourceTree = "<group>"; };
@@ -215,6 +221,9 @@
 				ED964207235355C400271D09 /* WelcomeView.swift */,
 				EDBC306723537176007CD500 /* UserProgressionView.swift */,
 				ED0A7CFC2353811000EAD79A /* LevelRow.swift */,
+				ED0A7D2A2354F84F00EAD79A /* StatefulContent.swift */,
+				ED0A7D2C2355034000EAD79A /* LevelList.swift */,
+				ED0A7D2E2355065A00EAD79A /* PulseLoader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -441,6 +450,7 @@
 				ED0A7D0A23538B7900EAD79A /* Endpoints.swift in Sources */,
 				ED9641F92353543900271D09 /* AppDelegate.swift in Sources */,
 				EDBC306823537176007CD500 /* UserProgressionView.swift in Sources */,
+				ED0A7D2F2355065A00EAD79A /* PulseLoader.swift in Sources */,
 				ED0A7D04235383D100EAD79A /* LevelRowCompletion.swift in Sources */,
 				ED9641FB2353543900271D09 /* SceneDelegate.swift in Sources */,
 				ED0A7D06235389DC00EAD79A /* CurrentLevel.swift in Sources */,
@@ -449,12 +459,14 @@
 				ED0A7CFD2353811000EAD79A /* LevelRow.swift in Sources */,
 				EDBC306623536FD2007CD500 /* UIColor.swift in Sources */,
 				ED0A7D242354A3EB00EAD79A /* JSONDecodable.swift in Sources */,
+				ED0A7D2B2354F84F00EAD79A /* StatefulContent.swift in Sources */,
 				EDBC306123536B68007CD500 /* UIResponder.swift in Sources */,
 				ED0A7D0823538A9B00EAD79A /* LevelTask.swift in Sources */,
 				ED0A7D0C23538C0800EAD79A /* NetworkManager.swift in Sources */,
 				ED0A7D222354A24B00EAD79A /* SwiftyJSON.swift in Sources */,
 				ED0A7D022353837A00EAD79A /* LevelRowViewModel.swift in Sources */,
 				ED96420E2353570F00271D09 /* Store.swift in Sources */,
+				ED0A7D2D2355034000EAD79A /* LevelList.swift in Sources */,
 				ED0A7D272354A97000EAD79A /* JSONComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

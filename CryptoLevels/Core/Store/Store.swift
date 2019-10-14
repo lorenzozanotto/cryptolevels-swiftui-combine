@@ -10,8 +10,9 @@ import Foundation
 import Combine
 
 final class Store: ObservableObject {
-    @Published var currentLevel = CurrentLevel.empty
+    @Published var level = CurrentLevel.empty
     @Published var orchestrator: Orchestrator
+    @Published var loading = false
     
     init() {
         self.orchestrator = Orchestrator()
