@@ -1,5 +1,5 @@
 //
-//  LevelList.swift
+//  LevelProgressList.swift
 //  CryptoLevels
 //
 //  Created by Lorenzo Zanotto on 14/10/2019.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LevelList: View {
+struct LevelProgressList: View {
     private let level: CurrentLevel
     
     init(_ level: CurrentLevel) {

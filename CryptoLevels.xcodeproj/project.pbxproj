@@ -21,7 +21,7 @@
 		ED0A7D3B2355297D00EAD79A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D342355297C00EAD79A /* WelcomeView.swift */; };
 		ED0A7D3C2355297D00EAD79A /* StatefulContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D362355297C00EAD79A /* StatefulContent.swift */; };
 		ED0A7D3D2355297D00EAD79A /* PulseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D372355297C00EAD79A /* PulseLoader.swift */; };
-		ED0A7D3E2355297D00EAD79A /* LevelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D382355297C00EAD79A /* LevelList.swift */; };
+		ED0A7D3E2355297D00EAD79A /* LevelProgressList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D382355297C00EAD79A /* LevelProgressList.swift */; };
 		ED0A7D3F2355297D00EAD79A /* LevelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D392355297C00EAD79A /* LevelRow.swift */; };
 		ED0A7D412355299F00EAD79A /* ContentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D402355299F00EAD79A /* ContentState.swift */; };
 		ED0A7D43235529D400EAD79A /* Store+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D42235529D400EAD79A /* Store+Extension.swift */; };
@@ -75,7 +75,7 @@
 		ED0A7D342355297C00EAD79A /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		ED0A7D362355297C00EAD79A /* StatefulContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatefulContent.swift; sourceTree = "<group>"; };
 		ED0A7D372355297C00EAD79A /* PulseLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseLoader.swift; sourceTree = "<group>"; };
-		ED0A7D382355297C00EAD79A /* LevelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelList.swift; sourceTree = "<group>"; };
+		ED0A7D382355297C00EAD79A /* LevelProgressList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelProgressList.swift; sourceTree = "<group>"; };
 		ED0A7D392355297C00EAD79A /* LevelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelRow.swift; sourceTree = "<group>"; };
 		ED0A7D402355299F00EAD79A /* ContentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentState.swift; sourceTree = "<group>"; };
 		ED0A7D42235529D400EAD79A /* Store+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+Extension.swift"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			children = (
 				ED0A7D362355297C00EAD79A /* StatefulContent.swift */,
 				ED0A7D372355297C00EAD79A /* PulseLoader.swift */,
-				ED0A7D382355297C00EAD79A /* LevelList.swift */,
+				ED0A7D382355297C00EAD79A /* LevelProgressList.swift */,
 				ED0A7D392355297C00EAD79A /* LevelRow.swift */,
 				ED0A7D402355299F00EAD79A /* ContentState.swift */,
 				ED0A7D4423552E8700EAD79A /* TryAgain.swift */,
@@ -507,7 +507,7 @@
 				ED0A7D3A2355297D00EAD79A /* UserProgressionView.swift in Sources */,
 				EDBC306123536B68007CD500 /* UIResponder+Extension.swift in Sources */,
 				ED0A7D3C2355297D00EAD79A /* StatefulContent.swift in Sources */,
-				ED0A7D3E2355297D00EAD79A /* LevelList.swift in Sources */,
+				ED0A7D3E2355297D00EAD79A /* LevelProgressList.swift in Sources */,
 				ED0A7D0823538A9B00EAD79A /* Task.swift in Sources */,
 				ED0A7D0C23538C0800EAD79A /* NetworkManager.swift in Sources */,
 				ED0A7D4B23553A8E00EAD79A /* Level.swift in Sources */,

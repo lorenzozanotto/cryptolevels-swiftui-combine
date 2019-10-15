@@ -30,7 +30,7 @@ struct UserProgressionView: View {
             // - Error message
             //
             StatefulContent(state: store.mapLevelState(), whenLoaded: {
-                LevelList(self.store.level)
+                LevelProgressList(self.store.level)
             }, whenLoading: {
                 PulseLoader(self.store.loading)
             }, onEmptyData: {
