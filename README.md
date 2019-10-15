@@ -2,7 +2,8 @@
 
 🏎 A SwiftUI + Combine approach to stateful content management.
 
-![Alt Text](https://github.com/lorenzozanotto/cryptolevels-swiftui-combine/blob/master/Showcase/app.showcase.gif)
+![Alt Text](https://gitlab.com/lorenzozanotto/crypto-levels/raw/master/Showcase/app.showcase.gif)
+
 
 ## Highlights
 
@@ -19,7 +20,7 @@ The Store is also an @EnvironmentObject in the Views, so every time that there a
 - **The Orchestrator**: which knows about the `Store` and the `Network`. Its goal is to fetch data from the
 internet, using **Combine** to map the received data and updating the `Store` to let the UI redraw.
 
-### 🏄🏻‍♂️ 7 Lines of Code Network Manager
+### 🏄️ 7 Lines of Code Network Manager
 
 The **Combine** powered Network Manager is only 7 lines of code and is packed with JSON to Model mapping.
 
@@ -75,7 +76,7 @@ the data that will be shown in the app.
 
 ### ♻️ Dead simple retry mechanism
 
-![Alt Text](https://github.com/lorenzozanotto/cryptolevels-swiftui-combine/blob/master/Showcase/retry.showcase.gif)
+![Alt Text](https://gitlab.com/lorenzozanotto/crypto-levels/raw/master/Showcase/retry.showcase.gif)
 
 Since all actions are dispatched from an `Orchestrator`, which is contained in the `Store`,
 dispatching an action that will later modify the entire app state based on its success or not, is really easy.
