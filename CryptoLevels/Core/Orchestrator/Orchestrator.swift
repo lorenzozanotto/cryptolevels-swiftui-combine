@@ -39,4 +39,21 @@ final class Orchestrator: ObservableObject {
             })
             .assign(to: \.level, on: store)
     }
+    
+    func fetchAllLevels() {
+        guard let store = store else { return }
+        guard let url = URL(string: Endpoints.LevelsList) else { return }
+        
+        store.startLoadingResource()
+        _ = network.fire(at: url, output: LevelsList.self)
+            .mapError({ (error) -> Error in
+                store.error = NetworkError.map(error)
+                return error
+            })
+            .catch { _ in Just(LevelsList.empty) }
+            .map({ store.stopLoadingResource()
+                return $0
+            })
+            .assign(to: \.levelsList, on: store)
+    }
 }

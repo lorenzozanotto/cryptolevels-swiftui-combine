@@ -17,7 +17,7 @@ struct LevelList: View {
     
     var body: some View {
         List {
-            NavigationLink(destination: WelcomeView()) {
+            NavigationLink(destination: LevelsView()) {
                 LevelRow(LevelRowViewModel(
                     title: "Current Level",
                     rightContent: "\(level.name) - \(level.number)",
@@ -25,7 +25,9 @@ struct LevelList: View {
                 ))
             }
             
-            Section(header: Text("NEXT LEVEL"), footer: Text("Reward: \(level.reward)")) {
+            Section(
+                header: Text("NEXT LEVEL"),
+                footer: Text("Reward: \(level.reward)")) {
                 ForEach(level.tasks, id: \.title) { task in
                     LevelRow(LevelRowViewModel(
                         title: task.title,
@@ -35,7 +37,9 @@ struct LevelList: View {
                 }
             }
             
-            Section(header: Text("REFERRALS"), footer: Text("For each friend you invite both will receive 0.1 BNB")) {
+            Section(
+                header: Text("REFERRALS"),
+                footer: Text("For each friend you invite both will receive 0.1 BNB")) {
                 LevelRow(LevelRowViewModel(
                     title: "Friends Invited",
                     rightContent: "\(level.invitedFriends)",

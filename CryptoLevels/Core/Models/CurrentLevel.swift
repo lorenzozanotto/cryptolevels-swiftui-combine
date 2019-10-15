@@ -14,9 +14,9 @@ struct CurrentLevel: JSONDecodable {
     let number: Int
     let reward: String
     let invitedFriends: Int
-    let tasks: [LevelTask]
+    let tasks: [Task]
     
-    public init(name: String, number: Int, reward: String, invitedFriends: Int, tasks: [LevelTask]) {
+    public init(name: String, number: Int, reward: String, invitedFriends: Int, tasks: [Task]) {
         self.name = name
         self.number = number
         self.reward = reward
@@ -36,7 +36,7 @@ struct CurrentLevel: JSONDecodable {
         
         let jsonTasks = json["level"]["tasks"].arrayValue
         self.tasks = jsonTasks.map({ jsonTask in
-            return LevelTask(
+            return Task(
                 title: jsonTask["task"]["title"].stringValue,
                 completed: jsonTask["status"].stringValue == "completed"
             )

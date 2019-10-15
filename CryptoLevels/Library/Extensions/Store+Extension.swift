@@ -17,4 +17,13 @@ extension Store {
             error: self.error
         )
     }
+    
+    func mapLevelListState() -> ContentState<LevelsList> {
+        return ContentState(
+            loading: self.loading,
+            data: self.levelsList,
+            emptyData: self.levelsList.levels.isEmpty,
+            error: self.error
+        )
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  LevelTask.swift
+//  Task.swift
 //  CryptoLevels
 //
 //  Created by Lorenzo Zanotto on 13/10/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LevelTask: Codable {
+struct Task: Codable {
     let title: String
     let completed: Bool
 }

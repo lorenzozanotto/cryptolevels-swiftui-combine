@@ -36,7 +36,14 @@ struct UserProgressionView: View {
             }, onEmptyData: {
                 Text("No data to fetch. Try again later.")
             }, onError: { error in
-                TryAgain(error: error, action: self.fetchLevel)
+                
+                // The fetchCurrentLevel queries the Orchestrator that
+                // will update the Store, so it will render this view
+                // again when the data gets fetched. Or not.
+                //
+                // Retry mechanism is as easy as that
+                //
+                TryAgain(error: error, action: self.fetchCurrentLevel)
             })
                 
             // Configuring the navigation bar
@@ -49,10 +56,10 @@ struct UserProgressionView: View {
         }
             
         // The fetchLevel action is dispatched at every appear
-        .onAppear(perform: fetchLevel)
+        .onAppear(perform: fetchCurrentLevel)
     }
     
-    func fetchLevel() {
+    func fetchCurrentLevel() {
         store.orchestrator.fetchCurrentLevel()
     }
 }

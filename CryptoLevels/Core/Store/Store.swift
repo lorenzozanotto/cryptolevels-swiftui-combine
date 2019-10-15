@@ -10,9 +10,15 @@ import Foundation
 import Combine
 
 final class Store: ObservableObject {
-    @Published var level = CurrentLevel.empty
+    
+    /// The orchestrator responsible of updating the store
     @Published var orchestrator: Orchestrator
     
+    /// The model data contained in the store
+    @Published var level = CurrentLevel.empty
+    @Published var levelsList = LevelsList.empty
+    
+    /// The application state contained in the store
     @Published var loading = false
     @Published var error: NetworkError?
     

@@ -10,7 +10,7 @@
 		ED0A7D022353837A00EAD79A /* LevelRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D012353837A00EAD79A /* LevelRowViewModel.swift */; };
 		ED0A7D04235383D100EAD79A /* LevelRowCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D03235383D100EAD79A /* LevelRowCompletion.swift */; };
 		ED0A7D06235389DC00EAD79A /* CurrentLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D05235389DC00EAD79A /* CurrentLevel.swift */; };
-		ED0A7D0823538A9B00EAD79A /* LevelTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0723538A9B00EAD79A /* LevelTask.swift */; };
+		ED0A7D0823538A9B00EAD79A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0723538A9B00EAD79A /* Task.swift */; };
 		ED0A7D0A23538B7900EAD79A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0923538B7900EAD79A /* Endpoints.swift */; };
 		ED0A7D0C23538C0800EAD79A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D0B23538C0800EAD79A /* NetworkManager.swift */; };
 		ED0A7D222354A24B00EAD79A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */; };
@@ -26,6 +26,10 @@
 		ED0A7D412355299F00EAD79A /* ContentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D402355299F00EAD79A /* ContentState.swift */; };
 		ED0A7D43235529D400EAD79A /* Store+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D42235529D400EAD79A /* Store+Extension.swift */; };
 		ED0A7D4523552E8800EAD79A /* TryAgain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D4423552E8700EAD79A /* TryAgain.swift */; };
+		ED0A7D472355387500EAD79A /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D462355387500EAD79A /* LevelsView.swift */; };
+		ED0A7D492355396800EAD79A /* LevelsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D482355396800EAD79A /* LevelsList.swift */; };
+		ED0A7D4B23553A8E00EAD79A /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D4A23553A8E00EAD79A /* Level.swift */; };
+		ED0A7D4D23553EE700EAD79A /* FullLevelsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A7D4C23553EE700EAD79A /* FullLevelsList.swift */; };
 		ED9641DD2353454A00271D09 /* CryptoLevelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641DC2353454A00271D09 /* CryptoLevelsTests.swift */; };
 		ED9641E82353454A00271D09 /* CryptoLevelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641E72353454A00271D09 /* CryptoLevelsUITests.swift */; };
 		ED9641F92353543900271D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9641F62353543900271D09 /* AppDelegate.swift */; };
@@ -60,7 +64,7 @@
 		ED0A7D012353837A00EAD79A /* LevelRowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelRowViewModel.swift; sourceTree = "<group>"; };
 		ED0A7D03235383D100EAD79A /* LevelRowCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelRowCompletion.swift; sourceTree = "<group>"; };
 		ED0A7D05235389DC00EAD79A /* CurrentLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLevel.swift; sourceTree = "<group>"; };
-		ED0A7D0723538A9B00EAD79A /* LevelTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelTask.swift; sourceTree = "<group>"; };
+		ED0A7D0723538A9B00EAD79A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		ED0A7D0923538B7900EAD79A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		ED0A7D0B23538C0800EAD79A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ED0A7D212354A24B00EAD79A /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -76,6 +80,10 @@
 		ED0A7D402355299F00EAD79A /* ContentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentState.swift; sourceTree = "<group>"; };
 		ED0A7D42235529D400EAD79A /* Store+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+Extension.swift"; sourceTree = "<group>"; };
 		ED0A7D4423552E8700EAD79A /* TryAgain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgain.swift; sourceTree = "<group>"; };
+		ED0A7D462355387500EAD79A /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
+		ED0A7D482355396800EAD79A /* LevelsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsList.swift; sourceTree = "<group>"; };
+		ED0A7D4A23553A8E00EAD79A /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		ED0A7D4C23553EE700EAD79A /* FullLevelsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLevelsList.swift; sourceTree = "<group>"; };
 		ED9641C22353454900271D09 /* CryptoLevels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoLevels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9641D82353454A00271D09 /* CryptoLevelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoLevelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9641DC2353454A00271D09 /* CryptoLevelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLevelsTests.swift; sourceTree = "<group>"; };
@@ -150,6 +158,7 @@
 			children = (
 				ED0A7D332355297C00EAD79A /* UserProgressionView.swift */,
 				ED0A7D342355297C00EAD79A /* WelcomeView.swift */,
+				ED0A7D462355387500EAD79A /* LevelsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 				ED0A7D392355297C00EAD79A /* LevelRow.swift */,
 				ED0A7D402355299F00EAD79A /* ContentState.swift */,
 				ED0A7D4423552E8700EAD79A /* TryAgain.swift */,
+				ED0A7D4C23553EE700EAD79A /* FullLevelsList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -281,7 +291,9 @@
 			children = (
 				ED0A7D002353837A00EAD79A /* ViewModels */,
 				ED0A7D05235389DC00EAD79A /* CurrentLevel.swift */,
-				ED0A7D0723538A9B00EAD79A /* LevelTask.swift */,
+				ED0A7D0723538A9B00EAD79A /* Task.swift */,
+				ED0A7D482355396800EAD79A /* LevelsList.swift */,
+				ED0A7D4A23553A8E00EAD79A /* Level.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -486,15 +498,19 @@
 				ED0A7D06235389DC00EAD79A /* CurrentLevel.swift in Sources */,
 				ED96421123535A2900271D09 /* Orchestrator.swift in Sources */,
 				ED0A7D31235526A600EAD79A /* NetworkError.swift in Sources */,
+				ED0A7D4D23553EE700EAD79A /* FullLevelsList.swift in Sources */,
 				EDBC306623536FD2007CD500 /* UIColor+Extension.swift in Sources */,
 				ED0A7D242354A3EB00EAD79A /* JSONDecodable.swift in Sources */,
+				ED0A7D472355387500EAD79A /* LevelsView.swift in Sources */,
+				ED0A7D492355396800EAD79A /* LevelsList.swift in Sources */,
 				ED0A7D412355299F00EAD79A /* ContentState.swift in Sources */,
 				ED0A7D3A2355297D00EAD79A /* UserProgressionView.swift in Sources */,
 				EDBC306123536B68007CD500 /* UIResponder+Extension.swift in Sources */,
 				ED0A7D3C2355297D00EAD79A /* StatefulContent.swift in Sources */,
 				ED0A7D3E2355297D00EAD79A /* LevelList.swift in Sources */,
-				ED0A7D0823538A9B00EAD79A /* LevelTask.swift in Sources */,
+				ED0A7D0823538A9B00EAD79A /* Task.swift in Sources */,
 				ED0A7D0C23538C0800EAD79A /* NetworkManager.swift in Sources */,
+				ED0A7D4B23553A8E00EAD79A /* Level.swift in Sources */,
 				ED0A7D3B2355297D00EAD79A /* WelcomeView.swift in Sources */,
 				ED0A7D222354A24B00EAD79A /* SwiftyJSON.swift in Sources */,
 				ED0A7D022353837A00EAD79A /* LevelRowViewModel.swift in Sources */,
