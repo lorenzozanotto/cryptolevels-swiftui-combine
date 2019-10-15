@@ -38,6 +38,7 @@ struct LevelsView: View {
     }
     
     func fetchAllLevels() {
+        guard store.levelsList.levels.isEmpty else { return }
         store.orchestrator.fetchAllLevels()
     }
 }

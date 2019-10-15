@@ -60,6 +60,8 @@ struct UserProgressionView: View {
     }
     
     func fetchCurrentLevel() {
+        // Requesting the level only if it hasn't been done before
+        guard store.level.name.isEmpty else { return }
         store.orchestrator.fetchCurrentLevel()
     }
 }
